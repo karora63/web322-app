@@ -1,0 +1,93 @@
+/* Main CSS file for the eCommerce web app */
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif; /* Use a clean sans-serif font */
+    background-color: #f8f9fa; /* Light background for better contrast */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Navbar Styles */
+nav {
+    background-color: #007bff; /* Blue background for the navbar */
+    padding: 15px; /* More padding for a spacious look */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+nav ul li {
+    display: inline; /* Display links in a line */
+    margin-right: 30px; /* Space between links */
+}
+
+nav ul li a {
+    color: white; /* White text for the links */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 18px; /* Slightly larger font size */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+    color: #ffdd57; /* Change text color on hover for better visibility */
+}
+
+/* Container Styles */
+.container {
+    max-width: 900px; /* Limit the width of the content */
+    margin: 30px auto; /* Center the container */
+    background: white; /* White background for content */
+    padding: 20px; /* Padding inside the container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Flexbox Layout for Rows */
+.row {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between columns */
+    margin: 20px 0; /* Margin around rows */
+}
+
+.col {
+    flex: 1; /* Each column takes equal space */
+    margin-right: 20px; /* Margin between columns */
+}
+
+.col:last-child {
+    margin-right: 0; /* Remove margin from last column */
+}
+
+/* Headings */
+h2 {
+    color: #343a40; /* Darker color for headings */
+    font-size: 24px; /* Larger font size for headings */
+    margin-bottom: 10px; /* Spacing below headings */
+}
+
+/* Paragraph Styles */
+p {
+    font-size: 16px; /* Set a comfortable font size */
+    line-height: 1.6; /* Better readability with line height */
+    color: #495057; /* Dark grey color for text */
+    margin-bottom: 15px; /* Spacing below paragraphs */
+}
+
+/* Button Styles (if needed in the future) */
+button {
+    background-color: #28a745; /* Green background for buttons */
+    color: white; /* White text for buttons */
+    border: none; /* Remove default border */
+    padding: 10px 15px; /* Padding inside buttons */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor changes to pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
