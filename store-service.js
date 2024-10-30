@@ -1,64 +1,42 @@
-const fs = require('fs'); // Import the file system module
+let items = []; // Mock in-memory data store for items
 
-let items = []; // Array to hold item data
-let categories = []; // Array to hold category data
-
-// Function to initialize data from JSON files
-function initialize() {
-    return new Promise((resolve, reject) => {
-        // Read items.json
-        fs.readFile('./data/items.json', 'utf8', (err, data) => {
-            if (err) {
-                return reject("Unable to read items file");
-            }
-            items = JSON.parse(data); // Parse JSON data into the items array
-
-            // Read categories.json
-            fs.readFile('./data/categories.json', 'utf8', (err, data) => {
-                if (err) {
-                    return reject("Unable to read categories file");
-                }
-                categories = JSON.parse(data); // Parse JSON data into the categories array
-                resolve(); // Resolve the promise once both files are read successfully
-            });
-        });
+module.exports.addItem = function(itemData) {
+    return new Promise((resolve) => {
+        itemData.published = itemData.published ? true : false;
+        itemData.id = items.length + 1;
+        items.push(itemData);
+        resolve(itemData);
     });
-}
+};
 
-// Function to get all items
-function getAllItems() {
+module.exports.getItemsByCategory = function(category) {
     return new Promise((resolve, reject) => {
-        if (items.length === 0) {
-            return reject("No results returned");
-        }
-        resolve(items); // Return all items
+        const filteredItems = items.filter(item => item.category === category);
+        if (filteredItems.length > 0) resolve(filteredItems);
+        else reject("no results returned");
     });
-}
+};
 
-// Function to get published items
-function getPublishedItems() {
+module.exports.getItemsByMinDate = function(minDateStr) {
     return new Promise((resolve, reject) => {
-        const publishedItems = items.filter(item => item.published);
-        if (publishedItems.length === 0) {
-            return reject("No results returned");
-        }
-        resolve(publishedItems); // Return published items
+        const minDate = new Date(minDateStr);
+        const filteredItems = items.filter(item => new Date(item.postDate) >= minDate);
+        if (filteredItems.length > 0) resolve(filteredItems);
+        else reject("no results returned");
     });
-}
+};
 
-// Function to get all categories
-function getCategories() {
+module.exports.getItemById = function(id) {
     return new Promise((resolve, reject) => {
-        if (categories.length === 0) {
-            return reject("No results returned");
-        }
-        resolve(categories); // Return all categories
+        const item = items.find(item => item.id === id);
+        if (item) resolve(item);
+        else reject("no result returned");
     });
-}
+};
 
-module.exports = {
-    initialize,
-    getAllItems,
-    getPublishedItems,
-    getCategories
+module.exports.getAllItems = function() {
+    return new Promise((resolve, reject) => {
+        if (items.length > 0) resolve(items);
+        else reject("no items found");
+    });
 };
