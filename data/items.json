@@ -1,212 +1,102 @@
 [
     {
-        "id": 1,
-        "name": "Laptop",
-        "category": "Electronics",
-        "published": true,
-        "price": 999.99
+       "id":1,
+       "category":1,
+       "postDate":"2023-05-14",
+       "featureImage":"https://dummyimage.com/200x200/000/fff",
+       "price":9.99,
+       "title":"Lawnmower",
+       "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis fringilla sem efficitur congue. Vestibulum efficitur blandit ultricies. Sed tempus mollis orci id facilisis. Aliquam placerat, ipsum eget egestas malesuada, neque nunc scelerisque felis, ut egestas turpis augue ut nisi. Curabitur vel convallis augue.",
+       "published":true
     },
     {
-        "id": 2,
-        "name": "Smartphone",
-        "category": "Electronics",
-        "published": true,
-        "price": 499.99
+       "id":2,
+       "category":1,
+       "postDate":"2023-05-15",
+       "featureImage":"https://dummyimage.com/200x200/000/fff",
+       "price":19.99,
+       "title":"Weber BBQ",
+       "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis fringilla sem efficitur congue. Vestibulum efficitur blandit ultricies. Sed tempus mollis orci id facilisis. Aliquam placerat, ipsum eget egestas malesuada, neque nunc scelerisque felis, ut egestas turpis augue ut nisi. Curabitur vel convallis augue.",
+       "published":true
     },
     {
-        "id": 3,
-        "name": "JavaScript: The Good Parts",
-        "category": "Books",
-        "published": true,
-        "price": 29.99
-    },
-    {
-        "id": 4,
-        "name": "T-Shirt",
-        "category": "Clothing",
-        "published": true,
-        "price": 19.99
-    },
-    {
-        "id": 5,
-        "name": "Bluetooth Headphones",
-        "category": "Electronics",
-        "published": true,
-        "price": 89.99
-    },
-    {
-        "id": 6,
-        "name": "Smart Watch",
-        "category": "Electronics",
-        "published": true,
-        "price": 199.99
-    },
-    {
-        "id": 7,
-        "name": "Python Crash Course",
-        "category": "Books",
-        "published": true,
-        "price": 24.99
-    },
-    {
-        "id": 8,
-        "name": "Jeans",
-        "category": "Clothing",
-        "published": true,
-        "price": 39.99
-    },
-    {
-        "id": 9,
-        "name": "4K TV",
-        "category": "Electronics",
-        "published": true,
-        "price": 599.99
-    },
-    {
-        "id": 10,
-        "name": "Digital Camera",
-        "category": "Electronics",
-        "published": false,
-        "price": 299.99
-    },
-    {
-        "id": 11,
-        "name": "The Pragmatic Programmer",
-        "category": "Books",
-        "published": true,
-        "price": 39.99
-    },
-    {
-        "id": 12,
-        "name": "Winter Jacket",
-        "category": "Clothing",
-        "published": true,
-        "price": 99.99
-    },
-    {
-        "id": 13,
-        "name": "USB-C Hub",
-        "category": "Electronics",
-        "published": true,
-        "price": 25.99
-    },
-    {
-        "id": 14,
-        "name": "Guitar",
-        "category": "Music",
-        "published": true,
-        "price": 199.99
-    },
-    {
-        "id": 15,
-        "name": "Wireless Mouse",
-        "category": "Electronics",
-        "published": true,
-        "price": 29.99
-    },
-    {
-        "id": 16,
-        "name": "Learn Node.js",
-        "category": "Books",
-        "published": true,
-        "price": 29.99
-    },
-    {
-        "id": 17,
-        "name": "Sneakers",
-        "category": "Clothing",
-        "published": true,
-        "price": 69.99
-    },
-    {
-        "id": 18,
-        "name": "Home Theater System",
-        "category": "Electronics",
-        "published": false,
-        "price": 499.99
-    },
-    {
-        "id": 19,
-        "name": "CSS Secrets",
-        "category": "Books",
-        "published": true,
-        "price": 35.99
-    },
-    {
-        "id": 20,
-        "name": "Backpack",
-        "category": "Clothing",
-        "published": true,
-        "price": 45.99
-    },
-    {
-        "id": 21,
-        "name": "Wireless Charger",
-        "category": "Electronics",
-        "published": true,
-        "price": 19.99
-    },
-    {
-        "id": 22,
-        "name": "Game Console",
-        "category": "Electronics",
-        "published": false,
-        "price": 399.99
-    },
-    {
-        "id": 23,
-        "name": "HTML & CSS: Design and Build Websites",
-        "category": "Books",
-        "published": true,
-        "price": 29.99
-    },
-    {
-        "id": 24,
-        "name": "Leather Wallet",
-        "category": "Clothing",
-        "published": true,
-        "price": 39.99
-    },
-    {
-        "id": 25,
-        "name": "Monitor",
-        "category": "Electronics",
-        "published": true,
-        "price": 249.99
-    },
-    {
-        "id": 26,
-        "name": "Digital Marketing",
-        "category": "Books",
-        "published": true,
-        "price": 24.99
-    },
-    {
-        "id": 27,
-        "name": "Headphones",
-        "category": "Electronics",
-        "published": true,
-        "price": 79.99
-    },
-    {
-        "id": 28,
-        "name": "Knitting for Dummies",
-        "category": "Books",
-        "published": true,
-        "price": 19.99
-    },
-    {
-        "id": 29,
-        "name": "Phone Case",
-        "category": "Electronics",
-        "published": true,
-        "price": 15.99
-    },
-    {
-        "id": 30,
-        "name": "Yoga Mat",
-        "category": "Clothing",
-        "published": true,
-        "price": 29.99
-    }
-]
+        "id":3,
+        "category":2,
+        "postDate":"2023-05-16",
+        "featureImage":"https://dummyimage.com/200x200/000/fff",
+        "price":439.99,
+        "title":"PS5",
+        "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis fringilla sem efficitur congue. Vestibulum efficitur blandit ultricies. Sed tempus mollis orci id facilisis. Aliquam placerat, ipsum eget egestas malesuada, neque nunc scelerisque felis, ut egestas turpis augue ut nisi. Curabitur vel convallis augue.",
+        "published":true
+     },
+     {
+        "id":4,
+        "category":2,
+        "postDate":"2023-05-17",
+        "featureImage":"https://dummyimage.com/200x200/000/fff",
+        "price":459.99,
+        "title":"XBOX",
+        "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis fringilla sem efficitur congue. Vestibulum efficitur blandit ultricies. Sed tempus mollis orci id facilisis. Aliquam placerat, ipsum eget egestas malesuada, neque nunc scelerisque felis, ut egestas turpis augue ut nisi. Curabitur vel convallis augue.",
+        "published":true
+     },
+     {
+        "id":5,
+        "category":3,
+        "postDate":"2023-05-18",
+        "featureImage":"https://dummyimage.com/200x200/000/fff",
+        "price":39.99,
+        "title":"TShirt",
+        "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis fringilla sem efficitur congue. Vestibulum efficitur blandit ultricies. Sed tempus mollis orci id facilisis. Aliquam placerat, ipsum eget egestas malesuada, neque nunc scelerisque felis, ut egestas turpis augue ut nisi. Curabitur vel convallis augue.",
+        "published":true
+     },
+     {
+        "id":6,
+        "category":3,
+        "postDate":"2023-05-19",
+        "featureImage":"https://dummyimage.com/200x200/000/fff",
+        "price":29.99,
+        "title":"Shorts",
+        "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis fringilla sem efficitur congue. Vestibulum efficitur blandit ultricies. Sed tempus mollis orci id facilisis. Aliquam placerat, ipsum eget egestas malesuada, neque nunc scelerisque felis, ut egestas turpis augue ut nisi. Curabitur vel convallis augue.",
+        "published":true
+     },
+     {
+        "id":7,
+        "category":4,
+        "postDate":"2023-05-20",
+        "featureImage":"https://dummyimage.com/200x200/000/fff",
+        "price":19.99,
+        "title":"Baseball",
+        "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis fringilla sem efficitur congue. Vestibulum efficitur blandit ultricies. Sed tempus mollis orci id facilisis. Aliquam placerat, ipsum eget egestas malesuada, neque nunc scelerisque felis, ut egestas turpis augue ut nisi. Curabitur vel convallis augue.",
+        "published":true
+     },
+     {
+        "id":8,
+        "category":4,
+        "postDate":"2023-05-21",
+        "featureImage":"https://dummyimage.com/200x200/000/fff",
+        "price":99.99,
+        "title":"Soccer Ball",
+        "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis fringilla sem efficitur congue. Vestibulum efficitur blandit ultricies. Sed tempus mollis orci id facilisis. Aliquam placerat, ipsum eget egestas malesuada, neque nunc scelerisque felis, ut egestas turpis augue ut nisi. Curabitur vel convallis augue.",
+        "published":true
+     },
+     {
+        "id":9,
+        "category":5,
+        "postDate":"2023-05-16",
+        "featureImage":"https://dummyimage.com/200x200/000/fff",
+        "price":99.99,
+        "title":"Dog Food",
+        "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis fringilla sem efficitur congue. Vestibulum efficitur blandit ultricies. Sed tempus mollis orci id facilisis. Aliquam placerat, ipsum eget egestas malesuada, neque nunc scelerisque felis, ut egestas turpis augue ut nisi. Curabitur vel convallis augue.",
+        "published":true
+     },
+     {
+        "id":10,
+        "category":5,
+        "postDate":"2023-05-16",
+        "featureImage":"https://dummyimage.com/200x200/000/fff",
+        "price":9.99,
+        "title":"Fish Food",
+        "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis fringilla sem efficitur congue. Vestibulum efficitur blandit ultricies. Sed tempus mollis orci id facilisis. Aliquam placerat, ipsum eget egestas malesuada, neque nunc scelerisque felis, ut egestas turpis augue ut nisi. Curabitur vel convallis augue.",
+        "published":true
+     }
+  ] 

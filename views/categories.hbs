@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="col-md-12">
+        <h2>Categories</h2>
+        <hr />
+
+        <!-- Display an error message if no categories are available -->
+        {{#unless categories}}
+            <div class="col-md-12 text-center">
+                <strong>{{message}}</strong>
+            </div>
+        {{else}}
+            <!-- Render categories in a responsive table -->
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Category ID</th>
+                            <th>Category Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each categories}}
+                            <tr>
+                                <!-- Category ID linking to the items page with the category filter -->
+                                <td><a href="/items?category={{this.id}}">{{this.id}}</a></td>
+                                <!-- Category Name linking to the items page with the category filter -->
+                                <td><a href="/items?category={{this.id}}">{{this.category}}</a></td>
+                            </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
+        {{/unless}}
+    </div>
+</div>
