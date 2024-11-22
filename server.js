@@ -7,7 +7,7 @@ No part of this assignment has been copied manually or electronically from any o
 Name: Khushi Arora
 Student ID: 146209234
 Date: 21/11/2024
-Replit Web App URL: https://replit.com/@mehakdhull189/web322-app-1
+Replit Web App URL: https://replit.com/@karora63/web322-app-1?v=1
 GitHub Repository URL: https://github.com/karora63/web322-app.git
 ********************************************************************************/
 
