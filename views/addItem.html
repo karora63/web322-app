@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><span>WEB322 - Khushi Arora </span></a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="/shop">Shop</a></li>
+                <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="/items">Items</a></li>
+                <li class="nav-item"><a class="nav-link" href="/categories">Categories</a></li>
+                <li class="nav-item"><a class="nav-link" href="/items/add">Add Item</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>About</h2>
+                <p>My name is Khushi . I'm studying computer programming and analysis i seneca college. I like to do coding , interested in learning new languages and like to practice them in new projects.</p>
+            </div>
+            <div class="col-md-6">
+                <h2></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, veniam quos, voluptatum rerum sit fugit, quia officiis voluptatibus illo adipisci cupiditate necessitatibus tempora tenetur consequuntur! Iusto vitae enim, dolore possimus perspiciatis labore assumenda. Eum debitis sit blanditiis repellat provident illum perspiciatis voluptatum consectetur ipsa fuga ipsum sed cumque culpa, similique rem totam alias at inventore distinctio libero nam itaque quae doloremque omnis. Consequuntur, voluptate possimus est voluptatem tempora doloremque atque impedit odit libero dolores dolor explicabo molestias recusandae, ratione nam nemo veniam. Voluptatibus expedita vero, quisquam et suscipit, adipisci dicta, ea dolores molestiae laudantium alias.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<form method="post" action="/items/add" enctype="multipart/form-data">
+    <fieldset>
+      <legend>Feature Image</legend>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <input
+              class="form-control"
+              id="featureImage"
+              name="featureImage"
+              type="file"
+            />
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <br />
+    <fieldset>
+      <legend>Post Content</legend>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label for="title">Item Name:</label>
+            <input class="form-control" id="title" name="title" type="text" />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label for="price">Price:</label>
+            <input class="form-control" id="price" name="price" type="text" />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label for="body">Description:</label>
+            <textarea
+              class="form-control"
+              id="body"
+              name="body"
+              rows="15"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="category">Category:</label>
+            <select class="form-control" name="category" id="category">
+              <option value="1">Home, Garden</option>
+              <option value="2">Electronics, Computers, Video Games</option>
+              <option value="3">Clothing</option>
+              <option value="4">Sports & Outdoors</option>
+              <option value="5">Pets</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="category">Visibility:</label>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="published" id="published" />
+                Published
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <hr />
+    <input
+      type="submit"
+      class="btn btn-primary pull-right"
+      value="Add Post"/><br /><br /><br />
+  </form>
+  

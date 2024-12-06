@@ -1,17 +1,9 @@
 <div class="row">
   <div class="col-md-12">
     <h2>Items</h2>
+    <a href="/items/add" class="btn btn-success pull-right">Add Post</a>
     <hr />
-
-    <!-- Display the message if no items are found -->
-    {{#unless items}}
-    <div class="col-md-12 text-center">
-      <strong>{{message}}</strong>
-    </div>
-    {{/unless}}
-
-    <!-- Display the table with items if they exist -->
-    {{#if items}}
+    {{#if data.items}}
     <div class="table-responsive">
       <table class="table">
         <thead>
@@ -22,23 +14,32 @@
             <th>Price</th>
             <th>Category</th>
             <th>Published</th>
+            <th></th> <!-- Empty header for the "Remove" column -->
           </tr>
         </thead>
         <tbody>
-          <!-- Loop through the items array and render each item as a row in the table -->
-          {{#each items}}
+          {{#each data.items}}
           <tr>
             <td>{{this.id}}</td>
             <td>{{this.title}}</td>
             <td>{{this.postDate}}</td>
             <td>${{this.price}}</td>
-            <td><a href="/items?category={{this.categoryId}}">{{this.category}}</a></td>
-            <td>{{#if this.published}}Yes{{else}}No{{/if}}</td>
+            <td>
+              <a href="/items?category={{this.category}}">{{this.category}}</a>
+            </td>
+            <td>{{#if this.published}}true{{else}}false{{/if}}</td>
+            <td>
+              <a href="/items/delete/{{this.id}}" class="btn btn-danger">
+                Remove
+              </a>
+            </td>
           </tr>
           {{/each}}
         </tbody>
       </table>
     </div>
+    {{else}}
+    <p>No items available.</p>
     {{/if}}
   </div>
 </div>

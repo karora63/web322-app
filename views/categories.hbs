@@ -1,35 +1,50 @@
 <div class="row">
-    <div class="col-md-12">
-        <h2>Categories</h2>
-        <hr />
-
-        <!-- Display an error message if no categories are available -->
-        {{#unless categories}}
-            <div class="col-md-12 text-center">
-                <strong>{{message}}</strong>
-            </div>
-        {{else}}
-            <!-- Render categories in a responsive table -->
-            <div class="table-responsive">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Category ID</th>
-                            <th>Category Name</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {{#each categories}}
-                            <tr>
-                                <!-- Category ID linking to the items page with the category filter -->
-                                <td><a href="/items?category={{this.id}}">{{this.id}}</a></td>
-                                <!-- Category Name linking to the items page with the category filter -->
-                                <td><a href="/items?category={{this.id}}">{{this.category}}</a></td>
-                            </tr>
-                        {{/each}}
-                    </tbody>
-                </table>
-            </div>
-        {{/unless}}
+  <div class="col-md-12">
+    <h2>Categories</h2>
+    <a href="/categories/add" class="btn btn-success pull-right">Add Category</a>
+    <hr />
+    {{#if data.categories}}
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Category ID</th> 
+            <th>Category Name</th>
+            <th></th> <!-- Empty header for the "Remove" button column -->
+          </tr>
+        </thead>
+        <tbody>
+          
+            {{#each data.categories}}
+              <tr>
+                <td>
+                  <a href="/shop?category={{this.id}}">{{this.id}}</a>
+                </td>
+                <td>
+                  <a href="/shop?category={{this.id}}">{{this.category}}</a>
+                </td>
+                <td>
+                  <a
+                    href="/categories/delete/{{this.id}}"
+                    class="btn btn-danger"
+                  >
+                    Remove
+                  </a>
+                </td>
+              </tr>
+            {{/each}}
+          {{else}}
+            <tr>
+              <td colspan="3">No categories available.</td>
+            </tr>
+          {{/if}}
+        </tbody>
+      </table>
     </div>
+    {{#if message}}
+      <div class="col-md-12 text-center">
+        <strong>{{message}}</strong>
+      </div>
+    {{/if}}
+  </div>
 </div>
