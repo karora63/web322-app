@@ -1,15 +1,4 @@
-/*********************************************************************************
-WEB322 – Assignment 06
-I declare that this assignment is my own work in accordance with Seneca Academic Policy.
-No part of this assignment has been copied manually or electronically from any other source 
-(including 3rd party web sites) or distributed to other students.
 
-Name: __Khushi Arora______ 
-Student ID: __146209234______ 
-Date: ____11-12-2024____________
-Repit Web App URL: _____https://replit.com/@karora63/web322-app?v=1________________
-GitHub Repository URL: _______https://github.com/karora63/web322-app.git___________________
-********************************************************************************/
 // Import required modules
 const express = require('express');
 const app = express();
